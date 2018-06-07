@@ -43,8 +43,23 @@ export default {
             { 'user': 'barney', 'age': 36, 'active': false },
             { 'user': 'fred',   'age': 40, 'active': false }
         ];
+        // 所有元素都要符合条件 才会返回true
         let every2 = _.every(users, {'active': false }); // => true
         console.log(every2)
+
+        /**
+         * _.forEach(collection, [iteratee=_.identity])
+         * 别名 each
+         * collection  要处理的集合
+         * [iteratee=_.identity] (Function): 每次迭代调用的函数
+         * 
+        */
+        _([1, 2]).forEach(function(value) {
+            console.log(value);
+        });
+        _.forEach({ 'a': 1, 'b': 2 }, function(value, key) {
+            console.log(key, value);
+        });
     },
     methods:{
 

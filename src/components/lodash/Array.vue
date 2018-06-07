@@ -80,8 +80,8 @@ export default {
             { 'user': 'pebbles', 'active': true }
         ];
 
-        let returnIndex = _.findIndex(users, function(chr) {
-            return chr.user == 'barney';
+        let returnIndex = _.findIndex(users, function(use) {
+            return use.user === 'barney';
         });
         // 0
 

@@ -26,9 +26,25 @@ export default {
          * key:处理的结果
          * value:处理的结果的次数
         */
-        let countBy = _.countBy([6.1, 4.2, 6.3,4.4], Math.floor);
-        console.log(countBy) // => {4: 2, 6: 2}
-        
+        let countBy = _.countBy([6.1, 4.2, 6.3,4.4], Math.floor); // => {4: 2, 6: 2}
+
+        /**
+         * _.every(collection, [predicate=_.identity])
+         * 参数
+         * collection 要处理的集合
+         * [iteratee=_.identity] (Array|Function|Object|string): 处理集合中每个元素的方法
+         * 
+         * 返回
+         * 如果 [所有元素] 经过检查都返回true 那么返回true 否则返回false
+        */
+        let every1 = _.every([true, 1, null, 'yes'], Boolean); // => false
+
+        var users = [
+            { 'user': 'barney', 'age': 36, 'active': false },
+            { 'user': 'fred',   'age': 40, 'active': false }
+        ];
+        let every2 = _.every(users, {'active': false }); // => true
+        console.log(every2)
     },
     methods:{
 

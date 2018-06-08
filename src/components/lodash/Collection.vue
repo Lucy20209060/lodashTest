@@ -45,7 +45,6 @@ export default {
         ];
         // 所有元素都要符合条件 才会返回true
         let every2 = _.every(users, {'active': false }); // => true
-        console.log(every2)
 
         /**
          * _.forEach(collection, [iteratee=_.identity])
@@ -55,11 +54,22 @@ export default {
          * 
         */
         _([1, 2]).forEach(function(value) {
-            console.log(value);
+            // console.log(value); 
         });
         _.forEach({ 'a': 1, 'b': 2 }, function(value, key) {
-            console.log(key, value);
+            // console.log(key, value);
         });
+
+        var users = [
+            { 'user': 'barney', 'age': 36, 'active': true },
+            { 'user': 'fred',   'age': 40, 'active': false }
+        ];
+        let filter = _.filter(users, function(o) { return !o.active; });
+        // console.log(filter) // => [{ 'user': 'fred',   'age': 40, 'active': false ]
+
+
+
+
     },
     methods:{
 

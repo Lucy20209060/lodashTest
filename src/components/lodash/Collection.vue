@@ -68,6 +68,16 @@ export default {
         // console.log(filter) // => [{ 'user': 'fred',   'age': 40, 'active': false ]
 
 
+        /**
+         * find 
+         * 通过条件返回符合条件的元素集合 否则返回 undefiend
+        */
+
+        /**
+         * includes
+         * 检查value值是否在集合中 如果集合是字符串 那么检查value值是否在字符串中 
+        */
+
 
 
     },

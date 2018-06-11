@@ -4,11 +4,13 @@ import Router from 'vue-router'
 import array from '@/components/lodash/Array';
 import chain from '@/components/lodash/Chain';
 import collection from '@/components/lodash/Collection';
+import date from '@/components/lodash/Date';
 Vue.use(Router)
 
 const routes = [
 	{ path: '/',name: 'array',component: array },
 	{ path: '/chain',name: 'chain',component: chain },
+	{ path: '/date',name: 'date',component: date },
 	{ path: '/collection',name: 'collection',component: collection }
 ]
 

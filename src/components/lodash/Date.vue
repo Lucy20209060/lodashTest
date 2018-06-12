@@ -19,6 +19,19 @@ export default {
         _.delay(function(text) {
             console.log(text);
         },2000,'超哥好帅啊');  
+
+
+        /**
+         * now
+         * 返回时间戳
+        */
+        console.log(_.now())
+
+
+
+
+
+
     },
     methods:{
 

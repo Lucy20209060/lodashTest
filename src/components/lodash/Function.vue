@@ -54,6 +54,16 @@ export default {
          console.log(func(10, 5))
         // => [100, 10]
 
+        /**
+         * rearg
+         * 将数组按照指定顺序返回
+        */
+        var rearged = _.rearg(function(a, b, c) {
+            return [a, b, c];
+        }, [2, 0, 1]);
+        
+        console.log(rearged('b', 'c', 'a'));
+
 
 
 

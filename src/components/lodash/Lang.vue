@@ -74,6 +74,10 @@ export default {
          * 检查 value是否大于other
         */
 
+        /**
+         * _.gte(value, other)
+         * 检查 value是否大于等于other
+        */
 
 
 

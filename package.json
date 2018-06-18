@@ -14,7 +14,7 @@
     "axios": "^0.16.2",
     "clipboard": "^1.7.1",
     "element-ui": "^1.4.2",
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.10",
     "lucy-toast": "^1.0.1",
     "raf.js": "0.0.4",
     "vue": "^2.3.3",

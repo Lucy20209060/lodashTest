@@ -6,6 +6,7 @@ import chain from '@/components/lodash/Chain';
 import collection from '@/components/lodash/Collection';
 import date from '@/components/lodash/Date';
 import Function from '@/components/lodash/Function';
+import Lang from '@/components/lodash/Lang';
 Vue.use(Router)
 
 const routes = [
@@ -13,7 +14,8 @@ const routes = [
 	{ path: '/chain',name: 'chain',component: chain },
 	{ path: '/date',name: 'date',component: date },
 	{ path: '/collection',name: 'collection',component: collection },
-	{ path: '/function',name: 'function',component: Function }
+	{ path: '/function',name: 'function',component: Function },
+	{ path: '/lang',name: 'lang',component: Lang }
 ]
 
 const router = new Router({

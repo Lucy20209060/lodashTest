@@ -67,7 +67,7 @@ export default {
 
         var object = { 'a': 1 };
         var other = { 'a': 1 };
-        console.log(_.eq(object, object)) // true
+        // console.log(_.eq(object, object)) // true
 
         /**
          * _.gt(value, other)
@@ -78,6 +78,12 @@ export default {
          * _.gte(value, other)
          * 检查 value是否大于等于other
         */
+
+        /**
+        * isArguments 判断value是否是一个类arguments对象
+        * 如果value是一个 arguments 对象 返回 true，否则返回 false
+        */
+        // console.log(_.isArguments([1, 2, 3]))
 
 
 

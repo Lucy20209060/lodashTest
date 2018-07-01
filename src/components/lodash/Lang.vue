@@ -85,6 +85,30 @@ export default {
         */
         // console.log(_.isArguments([1, 2, 3]))
 
+        /**
+        * isArray
+        * 检查是否是一个数组
+        */
+        // console.log(_.isArray([1,2,3,4]))
+
+        /**
+        * isArrayLike
+        * 检查是否是一个类数组
+        */
+
+        /**
+        * isBoolean 检查是否是一个布尔值
+        */
+
+        /**
+        * isElement
+        * 检查是否是一个DOM元素
+        * 
+        */
+        console.log(_.isElement(document.body))
+
+
+
 
 
     },

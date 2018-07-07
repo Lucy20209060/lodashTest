@@ -127,13 +127,19 @@ export default {
 			isFunction
 			检测是否是一个 Function对象
 		*/
-		console.log(_.isFunction(_))
+		// console.log(_.isFunction(_))
+		// function test(){
+		// 	console.log(3)
+		// }
+		// console.log(_.isFunction(test))
 
-		function test(){
-			console.log(3)
-		}
+		/*
+			isInteger
+			检测是否为整数
+		*/
+		console.log(_.isInteger(3.2))
 
-		console.log(_.isFunction(test))
+
 
 
     },

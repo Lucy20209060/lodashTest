@@ -107,8 +107,23 @@ export default {
         */
         // console.log(_.isElement(document.body)) // true
 
+        /*
+			isEmpty
+			检查value是否是一个空对象 集合 映射 或 set
+			对象如果被认为为空，那么他们没有自己的可枚举属性的对象。
+		*/
 
-
+		/*
+			isEqual
+		*/
+		var object = {"success":true,"code":0,"data":[{"orderCount":295349}]};
+		var other = {"success":true,"code":0,"data":[{"orderCount":295340}]};
+		
+		console.log(_.isEqual(object, other))
+		// => true
+		
+		console.log(object === other)
+		// => false
 
 
     },

@@ -115,15 +115,25 @@ export default {
 
 		/*
 			isEqual
+			深比较两个值是否相等
 		*/
 		var object = {"success":true,"code":0,"data":[{"orderCount":295349}]};
 		var other = {"success":true,"code":0,"data":[{"orderCount":295340}]};
 		
-		console.log(_.isEqual(object, other))
+		// console.log(_.isEqual(object, other))
 		// => true
-		
-		console.log(object === other)
-		// => false
+
+		/*
+			isFunction
+			检测是否是一个 Function对象
+		*/
+		console.log(_.isFunction(_))
+
+		function test(){
+			console.log(3)
+		}
+
+		console.log(_.isFunction(test))
 
 
     },

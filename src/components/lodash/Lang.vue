@@ -137,7 +137,12 @@ export default {
 			isInteger
 			检测是否为整数
 		*/
-		console.log(_.isInteger(3.2))
+		// console.log(_.isInteger(3.2))
+
+		/*
+			isMatch(object, source)
+			深度比较 来确定object是否含有和source完全相等的属性值
+		*/
 
 
 

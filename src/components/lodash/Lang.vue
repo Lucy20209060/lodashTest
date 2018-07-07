@@ -105,6 +105,7 @@ export default {
         * 检查是否是一个DOM元素
         * 
         */
+<<<<<<< HEAD
         // console.log(_.isElement(document.body)) // true
 
         /*
@@ -146,6 +147,9 @@ export default {
 
 
 
+=======
+         // console.log(_.isElement(document.body))
+>>>>>>> 90b460cc5c839cc18ee82423ef5f7b33a71ab1cb
 
     },
     methods:{

@@ -105,7 +105,7 @@ export default {
         * 检查是否是一个DOM元素
         * 
         */
-        console.log(_.isElement(document.body))
+        // console.log(_.isElement(document.body)) // true
 
 
 

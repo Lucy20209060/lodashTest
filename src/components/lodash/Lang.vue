@@ -1,6 +1,7 @@
 <template>
     <div class="Lang-wrap">
         Lang
+		<textarea v-model="msg"></textarea>
     </div>
 </template>
 
@@ -10,7 +11,7 @@ export default {
     name: 'Lang',
     data () {
         return {
-            
+            msg:'232323 \n 23123'
         }
     },
     mounted(){
@@ -143,6 +144,12 @@ export default {
 			isMatch(object, source)
 			深度比较 来确定object是否含有和source完全相等的属性值
 		*/
+
+        /**
+            isNaN
+            检测value是否是NaN
+        */
+        // console.log(_.isNaN(NaN))
 
 
 

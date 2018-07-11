@@ -151,6 +151,34 @@ export default {
         */
         // console.log(_.isNaN(NaN))
 
+        /**
+            isNumber
+            检测value是否为数字类型
+        */
+
+        /**
+            isObject
+            检测value是否为对象类型
+        */
+
+        /**
+            isPlainObject
+            检测value是否为普通的对象类型
+        */
+
+        /**
+            isString
+            检测value是否为字符串类型
+        */
+
+        /**
+            toArray
+            转换为数组
+        */
+        let obje = { 'a': 1, 'b': 2 };
+        // console.log(_.toArray(obje)) // => [1,2]
+        // console.log(_.toArray('abcd')) // => ['a','b','c','d']
+
 
 
 

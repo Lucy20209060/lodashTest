@@ -80,6 +80,13 @@ export default {
        * 移除对象路径上的值
       */
 
+     /**
+      * update(object, path, updater)
+      * object 要修改的对象
+      * path 要设置属性的路径
+      * updater用来生成设置值的函数
+     */
+
     //  async function showData() {
     // // 假装请求数据1
     // var data1 = await new Promise((resolve) => {
@@ -87,6 +94,14 @@ export default {
     //         resolve('data1');
     //     }, 1000);
     // });
+
+    var object = { 'a': [{ 'b': { 'c': 3 } }] };
+    _.update(object, 'a[0].b.c', function(n) { return n * n; });
+    // console.log(object.a[0].b.c); // => 9
+
+    _.update(object, 'x[0].y.z', function(n) { return n ? n + 1 : 0; });
+    // console.log(object.x[0].y.z); // => 0
+
 
     // // 假装请求数据2且此请求依赖数据1
     // var data2 = await new Promise((resolve) => {

@@ -117,6 +117,23 @@ export default {
 
     // showData();
 
+		/**
+		 * values
+		 * 返回一个数组 对象中属性值的集合
+		*/
+        let obj2 = {
+            a:'a',
+            b:'b',
+			c:'c',
+			d:{
+				e:'e'
+			},
+			f:function(){
+				console.log(2)
+			}
+		}
+		// console.log(_.values(obj2))
+
     },
     methods:{
 

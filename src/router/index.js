@@ -10,6 +10,7 @@ import Lang from '@/components/lodash/Lang';
 import Math from '@/components/lodash/Math';
 import Number from '@/components/lodash/Number';
 import Object from '@/components/lodash/Object';
+import String from '@/components/lodash/String';
 Vue.use(Router)
 
 const routes = [
@@ -20,8 +21,9 @@ const routes = [
 	{ path: '/function',name: 'function',component: Function },
 	{ path: '/lang',name: 'lang',component: Lang },
 	{ path: '/math',name: 'math',component: Math },
-  { path: '/number',name: 'number',component: Number },
-	{ path: '/object',name: 'object',component: Object }
+  	{ path: '/number',name: 'number',component: Number },
+	{ path: '/object',name: 'object',component: Object },
+	{ path: '/string',name: 'string',component: String }
 ]
 
 const router = new Router({

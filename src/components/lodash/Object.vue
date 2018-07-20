@@ -134,6 +134,19 @@ export default {
 		}
 		// console.log(_.values(obj2))
 
+		/**
+		 * valuesIn
+		 * 自身和继承的可枚举属性的值为数组
+		*/
+		function Foo() {
+			this.a = 1;
+			this.b = 2;
+		}
+		
+		Foo.prototype.c = 3;
+		
+		console.log(new Foo,_.valuesIn(new Foo));
+
     },
     methods:{
 

@@ -22,10 +22,13 @@ export default {
         */
         // console.log(_.camelCase('aaa-bbb')) // => aaaBbb
 
+        /**
+         * capitalize
+         * 转换首字母大写 其余小写
+        */
 
 
 
-        
     },
     methods:{
 

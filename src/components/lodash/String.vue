@@ -57,6 +57,21 @@ export default {
         */
         // console.log(_.pad('abcd',8,'.')) // => ..abcd..
 
+        /**
+         * padEnd
+         * 与pad类似 在后面填充
+         * 
+         * padStart
+         * 与pad类似 在前面填充
+        */
+
+        /**
+         * repeat
+         * 字符串重复指定次数
+        */
+        // console.log(_.repeat('&',5)) // => &&&&&
+        // console.log(_.repeat('abc',3)) // => abcabcabc
+
 
 
     },

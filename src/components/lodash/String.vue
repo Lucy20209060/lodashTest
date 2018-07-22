@@ -40,7 +40,22 @@ export default {
          * escape
          * 转义string中的 "&", "<", ">", '"', "'", 和 "`" 字符为HTML实体字符。 
         */
-        console.log(_.escape('<>`'))
+        // console.log(_.escape('<>`'))
+
+        /**
+         * escapeRegExp
+         * 转义 RegExp 字符串中特殊的字符 "^", "$", "", ".", "*", "+", "?", "(", ")", "[", "]", "{", "}", 和 "|" in
+        */
+        // console.log(_.escapeRegExp('[lodash](https://lodash.com/)'))
+
+        /**
+         * pad([string=''], [length=0], [chars=' '])
+         * [string=''] 被调戏的字符串
+         * [length=0] 字符串被填充到的长度
+         * [chars=' '] 填充使用的字符串 默认空格
+         * 用指定字符串填充字符串两侧到指定长度
+        */
+        // console.log(_.pad('abcd',8,'.')) // => ..abcd..
 
 
 

@@ -36,6 +36,12 @@ export default {
         // console.log(_.endsWith('abc', 'c')) // => true
         // console.log(_.endsWith('abc', 'b',2)) // => true
 
+        /**
+         * escape
+         * 转义string中的 "&", "<", ">", '"', "'", 和 "`" 字符为HTML实体字符。 
+        */
+        console.log(_.escape('<>`'))
+
 
 
     },

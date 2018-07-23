@@ -73,6 +73,42 @@ export default {
         // console.log(_.repeat('abc',3)) // => abcabcabc
 
 
+        // add 函数柯里化
+        function add(){
+            //建立args,利用闭包特性，不断保存arguments
+            var args = [].slice.call(arguments);
+            console.log(args)
+            //方法一，新建_add函数实现柯里化
+            var _add = function(){
+                if(arguments.length === 0){
+                    //参数为空，对args执行加法
+                    return args.reduce(function(a,b){return a+b});
+                }else {
+                    //否则，保存参数到args，返回一个函数
+                    [].push.apply(args,arguments);
+                    return _add;
+                }
+            }
+            //返回_add函数
+            return _add;
+        }
+
+        const addTem = add(1,2,3)(1)(2)(3)(4,5,6)(7,8)();
+        console.log(addTem)
+
+        console.log([1,2,3].reduce((a,b)=>{console.log(a,b);return a+b}))
+
+
+        /**
+         * [].slice.call(arguments)
+         * 将arguments对象的数组提出来转化为数组，arguments本身并不是数组而是对象
+        */
+        function add1 (){
+            console.log([].slice.call(arguments))
+        }
+
+        add1(1,2,3,4,5)
+
 
     },
     methods:{

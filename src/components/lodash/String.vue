@@ -96,18 +96,25 @@ export default {
         const addTem = add(1,2,3)(1)(2)(3)(4,5,6)(7,8)();
         console.log(addTem)
 
-        console.log([1,2,3].reduce((a,b)=>{console.log(a,b);return a+b}))
-
 
         /**
          * [].slice.call(arguments)
          * 将arguments对象的数组提出来转化为数组，arguments本身并不是数组而是对象
         */
-        function add1 (){
-            console.log([].slice.call(arguments))
-        }
+        // function add1 (){
+        //     console.log([].slice.call(arguments))
+        // }
+        // add1(1,2,3,4,5)
 
-        add1(1,2,3,4,5)
+        /**
+         * [].push.apply(arr1, arr2)
+         * 合并两个数组
+         * 第一个数组会被修改
+        */
+        let arr1 = [1, 2, 3, 4, 5];
+        let arr2 = [6, 7, 8, 9, 10];
+        [].push.apply(arr1, arr2)
+        console.log(arr1, arr2)
 
 
     },

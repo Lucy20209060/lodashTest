@@ -111,10 +111,10 @@ export default {
          * 合并两个数组
          * 第一个数组会被修改
         */
-        let arr1 = [1, 2, 3, 4, 5];
-        let arr2 = [6, 7, 8, 9, 10];
-        [].push.apply(arr1, arr2)
-        console.log(arr1, arr2)
+        // let arr1 = [1, 2, 3, 4, 5];
+        // let arr2 = [6, 7, 8, 9, 10];
+        // [].push.apply(arr1, arr2)
+        // console.log(arr1, arr2)
 
 
     },

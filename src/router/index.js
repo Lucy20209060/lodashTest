@@ -11,8 +11,8 @@ import Math from '@/components/lodash/Math';
 import Number from '@/components/lodash/Number';
 import Object from '@/components/lodash/Object';
 import String from '@/components/lodash/String';
+import Utility from '@/components/lodash/Utility';
 Vue.use(Router)
-
 const routes = [
 	{ path: '/',name: 'array',component: array },
 	{ path: '/chain',name: 'chain',component: chain },
@@ -23,7 +23,8 @@ const routes = [
 	{ path: '/math',name: 'math',component: Math },
   	{ path: '/number',name: 'number',component: Number },
 	{ path: '/object',name: 'object',component: Object },
-	{ path: '/string',name: 'string',component: String }
+	{ path: '/string',name: 'string',component: String },
+	{ path: '/utility',name: 'utility',component: Utility }
 ]
 
 const router = new Router({

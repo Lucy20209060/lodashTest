@@ -32,8 +32,13 @@ export default {
          * 检查value 如果value为NaN,null,undefiend，返回defaultValue 否则返回value本身
          * 类似于 !!value ? value : defaultValue
         */
+        // console.log(_.defaultTo(NaN,40))
 
-       console.log(_.defaultTo(NaN,40))
+        /**
+         * identity
+         * 返回首个提供的参数
+        */
+        console.log(_.identity(1,2,3))
 
 
     },

@@ -15,6 +15,21 @@ export default {
     },
     mounted(){
         //====================================== Array ========================================
+
+
+        const obj = {
+            goods:{
+                'a_1':1,
+                'a_2':2,
+                'a_3':3,
+            },
+            adv:'idsahdhajsd'
+        }
+
+        const key = 'a_'+3;
+        const tem = obj.goods[key]
+        console.log(tem)
+
         /*
             chunk
             将某个数组按特定的长度划分成多个数组

@@ -2,7 +2,7 @@ if [ -n "$1" ];then
 echo $1
 git add -A
 echo "git add -A"
-git commit "$1"
+git commit -m "$1"
 echo "git commit $1"
 git pull
 echo "git pull"

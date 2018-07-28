@@ -38,7 +38,13 @@ export default {
          * identity
          * 返回首个提供的参数
         */
-        console.log(_.identity(1,2,3))
+        // console.log(_.identity(1,2,3))
+ 
+        /**
+         * noop
+         * 返回 undefined
+        */
+        // console.log(_.noop())
 
 
     },

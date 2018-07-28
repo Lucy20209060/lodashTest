@@ -58,8 +58,8 @@ export default {
          * over
          * 创建一个函数 传入提供的参数的函数并调用iteratees 返回结果
         */
-        var func = _.over([Math.max, Math.min]);
-        console.log(func(1, 2, 3, 4))
+        // var func = _.over([Math.max, Math.min]);
+        // console.log(func(1, 2, 3, 4))
 
 
 

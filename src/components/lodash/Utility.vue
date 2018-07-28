@@ -46,6 +46,17 @@ export default {
         */
         // console.log(_.noop())
 
+        /**
+         * nthArg
+         * 创建一个函数 这个函数返回第n个参数，如果n为负数，则返回从结尾开始的第n个参数
+        */
+
+        // var fun = _.nthArg(1);
+        // console.log(fun(1,2,3,4))
+
+        
+
+
 
     },
     methods:{

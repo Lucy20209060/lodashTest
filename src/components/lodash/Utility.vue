@@ -70,6 +70,25 @@ export default {
         */
         // console.log(_.range(1, 5))
 
+        /**
+         * times(n,[iteratee])
+         * 调用iteratee n次，每次返回结果存入到数组中
+        */
+
+       /**
+        * toPath(value)
+        * 转化 value 为属性路径的数组
+       */
+        // console.log(_.toPath('a.b.c')) // => ["a","b","c"]
+
+        /**
+         * uniqueId([prefix=''])
+         * 返回唯一Id,如果提供prefix，会被添加到ID前缀上
+        */
+       console.log(_.uniqueId('contact_'),_.uniqueId('contact_'),_.uniqueId('contact_'),_.uniqueId('contact_'),_.uniqueId())
+
+
+
 
 
 

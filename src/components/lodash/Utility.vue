@@ -61,6 +61,14 @@ export default {
         // var func = _.over([Math.max, Math.min]);
         // console.log(func(1, 2, 3, 4))
 
+        /**
+         * range([start=0], end, [step=1])
+         * 创建一个包含从start 到  end(不包括)的数字的数组
+         * [start=0]起点
+         * end 结束点
+         * [step=1] 增量
+        */
+        // console.log(_.range(1, 5))
 
 
 

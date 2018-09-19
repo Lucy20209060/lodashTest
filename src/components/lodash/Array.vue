@@ -1,6 +1,8 @@
 <template>
     <div class="Array-wrap">
         Array
+        <input type="text" id="abc" name="abc">
+        <input type="button" @click="click">
     </div>
 </template>
 
@@ -13,7 +15,18 @@ export default {
             
         }
     },
+    methods:{
+        click() {
+            console.log(document.getElementById('abc').value)
+        }
+	},
     mounted(){
+
+        
+
+
+
+
         //====================================== Array ========================================
 
 
@@ -233,9 +246,7 @@ export default {
 
         console.log(arr16)
     },
-    methods:{
-
-	}
+    
 }
 </script>
 

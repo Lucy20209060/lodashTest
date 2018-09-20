@@ -1,8 +1,7 @@
 <template>
     <div class="Array-wrap">
         Array
-        <input type="text" id="abc" name="abc">
-        <input type="button" @click="click">
+        
     </div>
 </template>
 
@@ -16,17 +15,11 @@ export default {
         }
     },
     methods:{
-        click() {
-            console.log(document.getElementById('abc').value)
-        }
+        
 	},
     mounted(){
-
-        
-
-
-
-
+        console.log([...new Set([1,2,3,4,1,2,6,7])])
+        console.log(Array.from(new Set([1,2,3,4,1,2,6,7])))
         //====================================== Array ========================================
 
 
@@ -41,7 +34,7 @@ export default {
 
         const key = 'a_'+3;
         const tem = obj.goods[key]
-        console.log(tem)
+        // console.log(tem)
 
         /*
             chunk
@@ -235,16 +228,7 @@ export default {
             takeRight
             从数组的右侧开始，截取n个元素 n默认为1
         */
-
-
-
-
-
-
-
-
-
-        console.log(arr16)
+        // console.log(arr16)
     },
     
 }
